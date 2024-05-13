@@ -14,4 +14,6 @@ for(const item of menuItems) {
         break;
     }
 }
-console.log(`the found item is ${foundItem.item}, ${foundItem.category}, ${foundItem.price}`);
+// const foundItem = menuItems.find(item => item.id === 4)
+
+console.log(`item found: ${foundItem.item}, ${foundItem.category}, ${foundItem.price}`);

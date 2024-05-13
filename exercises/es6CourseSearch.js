@@ -36,7 +36,7 @@ let courses = [
   },
 ];
 
-//* When does the PROG200 course start?
+//? When does the PROG200 course start?
 let prog200Course = courses.find(course => course.CourseId === "PROG200");
 console.log(`The PROG200 course starts on ${prog200Course.StartDate}`);
 
@@ -45,7 +45,7 @@ let proj500Course = courses.find(course => course.CourseId === "PROJ500");
 console.log(`The title of the PROJ500 course is: ${proj500Course.Title}`); 
 
 // What are the titles of the courses that cost $50 or less?
-let cheapCourses = courses.filter(course => course.Fee <= "50.00");
+let cheapCourses = courses.filter(course => course.Fee <= 50.00);
 let cheapCourseTitles = cheapCourses.map(course => course.Title);
 console.log(`The titles of the courses that cost $50 or less are:
 ${cheapCourseTitles.join(", ")}`);

@@ -40,3 +40,7 @@ let courses = [
 let prog200Course = courses.filter(course => course.CourseId === "PROG200")[0];
 console.log(`The PROG200 course starts on ${prog200Course.StartDate}`);
 
+// What is the title of the PROJ500 course?
+let proj500Course = courses.find(course => course.CourseId === "PROJ500");
+console.log(`The title of the PROJ500 course is: ${proj500Course.Title}`); 
+

@@ -37,7 +37,7 @@ let courses = [
 ];
 
 //* When does the PROG200 course start?
-let prog200Course = courses.filter(course => course.CourseId === "PROG200")[0];
+let prog200Course = courses.find(course => course.CourseId === "PROG200");
 console.log(`The PROG200 course starts on ${prog200Course.StartDate}`);
 
 //* What is the title of the PROJ500 course?

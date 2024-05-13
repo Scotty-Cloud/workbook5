@@ -40,17 +40,17 @@ let courses = [
 let prog200Course = courses.find(course => course.CourseId === "PROG200");
 console.log(`The PROG200 course starts on ${prog200Course.StartDate}`);
 
-//* What is the title of the PROJ500 course?
+//? What is the title of the PROJ500 course?
 let proj500Course = courses.find(course => course.CourseId === "PROJ500");
 console.log(`The title of the PROJ500 course is: ${proj500Course.Title}`); 
 
-// What are the titles of the courses that cost $50 or less?
+//? What are the titles of the courses that cost $50 or less?
 let cheapCourses = courses.filter(course => course.Fee <= 50.00);
 let cheapCourseTitles = cheapCourses.map(course => course.Title);
 console.log(`The titles of the courses that cost $50 or less are:
 ${cheapCourseTitles.join(", ")}`);
 
-//* What classes meet in "Classroom 1"?
+//? What classes meet in "Classroom 1"?
 let classroom1Courses = courses.filter(course => course.Location === "Classroom 1");
 console.log(`The courses that meet in Classroom 1 are: 
 ${classroom1Courses.map(course => course.Title).join(", ")}`);

@@ -1,5 +1,5 @@
 # Workbook 5
-code examples & exercises for workbook 5
+code demos, examples & exercises for workbook 5
 - Arrays
 - forEach()
 - map() (and other instanced methods)

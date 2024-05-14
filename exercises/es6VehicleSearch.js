@@ -66,10 +66,17 @@ let vehicles = [
 ];
 
 //? Which vehicles are RED?
-let redVehicles = vehicles.filter(vehicle => vehicle.color === "Red");
+let redVehicles = vehicles.filter((vehicle) => vehicle.color === "Red");
 console.log(redVehicles);
 
 //? Which vehicles have registrations that are expired?
+let expiredVehicles = vehicles.filter((vehicle) => {
+  let expirationDate = new Date(vehicle.registrationExpires);
+  return expirationDate < new Date();
+});
+console.log(
+  `Expired registrations:\n${expiredVehicles
+    .map((vehicle) => `- ${vehicle.color} ${vehicle.type} (${vehicle.licenseNo})`).join("\n")}`);
 
 //? Which vehicles that hold at least 6 people?
 

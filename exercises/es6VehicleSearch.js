@@ -65,7 +65,7 @@ let vehicles = [
   },
 ];
 
-//? Which vehicles are RED?
+// //? Which vehicles are RED?
 let redVehicles = vehicles.filter((vehicle) => vehicle.color === "Red");
 console.log(redVehicles);
 
@@ -83,3 +83,5 @@ const vehicleCapacity = vehicles.filter((vehicle) => vehicle.capacity >= 6);
 console.log(vehicleCapacity);
 
 //? Which vehicles have license plates that end with "222"?
+const plate222Vehicles = vehicles.filter((v) => v.licenseNo.endsWith("222"));
+console.log(plate222Vehicles);

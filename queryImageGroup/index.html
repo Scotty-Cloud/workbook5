@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Group</title>
+  </head>
+  <body>
+    <main>
+      <div class="imageGroup">
+        <img src="images/yoriichi.jpg" width="800" height="480" />
+        <p>Yoriichi, The most feared demon slayer</p>
+      </div>
+
+      <div class="imageGroup">
+        <img src="images/yoriichi.jpg" width="800" height="480" />
+        <p>Yoriichi, The most feared demon slayer</p>
+      </div>
+
+      <div class="imageGroup">
+        <img src="images/yoriichi.jpg" width="800" height="480" />
+        <p>Yoriichi, The most feared demon slayer</p>
+      </div>
+    </main>
+    <script>
+        window.onload = function() {
+      // Select all elements with the class "imageGroup"
+      let imageGroups = document.querySelectorAll(".imageGroup");
+      // Loop through each selected element
+      for (const imageGroup of imageGroups) {
+        // Add thick red border
+        imageGroup.style.border = "5px solid red";
+      }
+
+      let noAlt = document.querySelectorAll("img:not([alt])");
+      // Assign them the text "graffiti image"
+      for (const img of noAlt) {
+        img.alt = "graffiti image";
+      }
+    }
+    </script>
+  </body>
+</html>

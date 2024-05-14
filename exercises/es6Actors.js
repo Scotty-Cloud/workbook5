@@ -27,6 +27,9 @@ const memberID = academyID && academyID.name || "Not found";
 console.log(`The member who has the ID of 187 is; ${memberID}`);
 
 // Who has been in at least 3 films?
+let threePlusFilms = academyMembers.filter(member => member.films.length >= 3);
+let memberNames = threePlusFilms.map(member => member.name).join(', ');
+console.log(`These are the members who have been in 3 or more films: ${memberNames}`);
 
 // Who has a name that starts with "Bob"?
 

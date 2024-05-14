@@ -8,8 +8,10 @@ let cart = [
   { item: "Apples", price: 0.66, quantity: 6 },
 ];
 
-//? part a
+//* part a
 //? .map method to return name
 let itemNames = cart.map(item => item.item);
+console.log(`${itemNames.join(', ')}`);
 //? forEach to display the list of items
 itemNames.forEach((item) => {console.log(`- ${item}`)});
+

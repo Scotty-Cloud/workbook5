@@ -22,8 +22,8 @@ let academyMembers = [
 ];
 
 // Who is the Academy Member whose ID is 187?
-const academyID = academyMembers.find(member => member.memID === 187);
-const memberID = academyID && academyID.name || "Not found";
+let academyID = academyMembers.find(member => member.memID === 187);
+let memberID = academyID && academyID.name || "Not found";
 console.log(`The member who has the ID of 187 is; ${memberID}`);
 
 // Who has been in at least 3 films?
@@ -32,6 +32,9 @@ let memberNames = threePlusFilms.map(member => member.name).join(', ');
 console.log(`These are the members who have been in 3 or more films: ${memberNames}`);
 
 // Who has a name that starts with "Bob"?
+let matchingMembers = academyMembers.filter(member => member.name.startsWith("Bob"));
+let names = matchingMembers.map(member => member.name);
+console.log(`These are the members whose name starts with "Bob": ${names.join(', ')}`);
 
 // HARDER: Which Academy Members have been in a film
 

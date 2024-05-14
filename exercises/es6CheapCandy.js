@@ -9,19 +9,17 @@ let products = [
 
 //? Which candies costs less than $4.00?
 let cheapCandy = products.filter((product) => product.price < 4.0);
-console.log(
-  `Cheap candies: ${cheapCandy.map((product) => product.product).join(", ")}`
-);
+console.log( `Cheap candies: ${cheapCandy.map((product) => product.product).join(", ")}`);
 
-//? Which candies has "M&M" its name?
+// //? Which candies has "M&M" its name?
 let hasName = products
   .filter((product) => product.product.includes("M&Ms"))
   .map((product) => product.product);
 console.log(`Candies with "M&Ms" in their name: ${hasName.join(", ")}`);
 
-//? Do we carry "Swedish Fish"?
+// //? Do we carry "Swedish Fish"?
 let swedishFish = products.filter(product => product.product === "Swedish Fish");
-if (swedishFish.length > 0) {
+if (swedishFish) {
   console.log(`Yes, we carry Swedish Fish. at the price of ${swedishFish[0].price}.`);
 } else {
   console.log(`No, we do not carry Swedish Fish.`);

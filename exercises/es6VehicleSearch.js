@@ -79,5 +79,7 @@ console.log(
     .map((vehicle) => `- ${vehicle.color} ${vehicle.type} (${vehicle.licenseNo})`).join("\n")}`);
 
 //? Which vehicles that hold at least 6 people?
+const vehicleCapacity = vehicles.filter((vehicle) => vehicle.capacity >= 6);
+console.log(vehicleCapacity);
 
 //? Which vehicles have license plates that end with "222"?

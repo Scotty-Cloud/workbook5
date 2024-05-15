@@ -69,3 +69,25 @@ function setUnohanaImage() {
     unohanaImage.appendChild(option);
   }
 }
+
+function addImage() {
+    const id = unohanaImage.value;
+    for (const imageFile of imageFiles) {
+      if (imageFile.id == id) {
+        let image = document.createElement("img");
+        image.src = imageFile.path;
+        image.alt = imageFile.description;
+        imgDisplay.appendChild(image);
+      }
+    }
+  }
+  
+  function removeImages() {
+    imgDisplay.innerHTML = "";
+  }
+  
+  addImageButton.onclick = addImage;
+  clearImagesButton.onclick = removeImages;
+  
+  setUnohanaImage();
+  

@@ -61,3 +61,11 @@ const addImageButton = document.querySelector("#addImageButton");
 const clearImagesButton = document.querySelector("#clearImagesButton");
 const imgDisplay = document.querySelector("#imgDisplay");
 
+function setUnohanaImage() {
+  for (const imageFile of imageFiles) {
+    let option = document.createElement("option");
+    option.value = imageFile.id;
+    option.innerText = imageFile.description;
+    unohanaImage.appendChild(option);
+  }
+}

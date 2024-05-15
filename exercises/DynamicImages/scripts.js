@@ -67,11 +67,13 @@ let imageFiles = [
 ];
 
 window.onload = function () {
+    // get all html elements into variables
   const selectedImage = document.querySelector("#selectedImage");
   const addImageButton = document.querySelector("#addImageButton");
   const clearImagesButton = document.querySelector("#clearImagesButton");
   const imgDisplay = document.querySelector("#imgDisplay");
 
+  // define functions 
   function setImage() {
     for (const imageFile of imageFiles) {
       let option = document.createElement("option");
@@ -97,7 +99,7 @@ window.onload = function () {
   function removeImages() {
     imgDisplay.innerHTML = "";
   }
-
+// associate functins with html element events 
   addImageButton.onclick = addImage;
   clearImagesButton.onclick = removeImages;
 

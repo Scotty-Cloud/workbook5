@@ -27,4 +27,4 @@ code demos, examples & exercises for workbook 5
     - removing child node
     - replacing child node
   - working with tables
-  - table structures
+    - table structures
